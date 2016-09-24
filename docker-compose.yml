@@ -14,7 +14,7 @@ dctb-phpmyadmin:
   links:
     - dctb-mysql:mysql
   ports:
-    - 9999:80
+    - "9999:80"
   environment:
     MYSQL_USERNAME      : root
     MYSQL_ROOT_PASSWORD : root
@@ -27,3 +27,4 @@ dctb-lamp:
     - dctb-mysql
   ports:
     - "8888:80"
+    - "2222:22"
